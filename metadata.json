@@ -1,0 +1,6 @@
+{
+  "name": "Feedback Sentiment Board",
+  "description": "Executive CX & Feedback Sentiment Analytics Dashboard with Supabase reviews and support tickets schema, real-time auto-refresh, root-cause substitution tracking, and AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
