@@ -132,13 +132,17 @@ export default function App() {
 
   const tabs: Array<{ id: ActiveTab; label: string; icon: React.ComponentType<{ className?: string }> }> = [
     { id: 'overview', label: '1. Executive & Sources', icon: LayoutDashboard },
+    /* Tab 2 temporarily commented out:
     { id: 'sentiment', label: '2. Sentiment Intelligence', icon: Smile },
-    { id: 'themes', label: '3. Themes & Root Cause', icon: GitFork },
+    */
+    { id: 'themes', label: '2. Themes & Root Cause', icon: GitFork },
+    /* Tab 4 temporarily commented out:
     { id: 'substitution', label: '4. Substitution & Price Delta', icon: RotateCcw },
-    { id: 'support_reviews', label: '5. Reviews & Support Tickets', icon: Headphones },
-    { id: 'alerts_ai', label: '6. Alerts & AI Insights', icon: Flame },
-    { id: 'explorer', label: '7. Feedback Explorer & Linking', icon: Search },
-    { id: 'goals', label: '8. Trends & OKR Goals', icon: Target },
+    */
+    { id: 'support_reviews', label: '3. Reviews & Support Tickets', icon: Headphones },
+    { id: 'alerts_ai', label: '4. Alerts & AI Insights', icon: Flame },
+    { id: 'explorer', label: '5. Feedback Explorer & Linking', icon: Search },
+    { id: 'goals', label: '6. Trends & OKR Goals', icon: Target },
   ];
 
   return (
@@ -202,7 +206,7 @@ export default function App() {
           </div>
         )}
 
-        {/* TAB 2: Sentiment Dashboard */}
+        {/* TAB 2 (Temporarily commented out): Sentiment Dashboard
         {activeTab === 'sentiment' && (
           <div className="space-y-8 animate-in fade-in duration-300">
             <SentimentDashboard
@@ -212,8 +216,9 @@ export default function App() {
             />
           </div>
         )}
+        */}
 
-        {/* TAB 3: Feedback Themes & Root Cause Analysis */}
+        {/* TAB 2 (formerly 3): Feedback Themes & Root Cause Analysis */}
         {activeTab === 'themes' && (
           <div className="space-y-8 animate-in fade-in duration-300">
             <FeedbackThemes
@@ -224,15 +229,16 @@ export default function App() {
           </div>
         )}
 
-        {/* TAB 4: Substitution Analytics & Price Transparency */}
+        {/* TAB 4 (Temporarily commented out): Substitution Analytics & Price Transparency
         {activeTab === 'substitution' && (
           <div className="space-y-8 animate-in fade-in duration-300">
             <SubstitutionAnalytics />
             <PriceTransparencyAnalytics />
           </div>
         )}
+        */}
 
-        {/* TAB 5: Support Ticket Analytics & Review Analytics */}
+        {/* TAB 3 (formerly 5): Support Ticket Analytics & Review Analytics */}
         {activeTab === 'support_reviews' && (
           <div className="space-y-8 animate-in fade-in duration-300">
             <SupportTicketAnalytics tickets={dataState.supportTickets} />
